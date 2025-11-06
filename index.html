@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <main>
+        <video id="video" autoplay muted loop playsinline>
+            <source  src="./Assets/Umbrella.mp4" type="video/mp4"/>
+        </video>
+
+        <video id="video-back" autoplay muted loop playsinline>
+            <source  src="./Assets/UmbrellaBlur.mp4" type="video/mp4"/>
+        </video>
+        
+        <nav>
+            <ul>
+                <li>
+                    <p><i class="fa-solid fa-cloud-moon"></i> Weather Forecast</p>
+                </li>
+                <li>
+                    <p><input id="city" type="text" placeholder="Enter the City name"><i id="city_icon" class="fa-solid fa-magnifying-glass"></i></p>
+                </li>
+                <li>
+                    <div class="datetime">
+                        <p id="day">.....</p>
+                        <p>|</p>
+                        <p id="time">-----</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <article class="art1">
+                <div class="Desc">
+                <h1 id="description"></h1>
+                <div id="content">
+                    <h2 class="hide">Know what's coming — rain, snow, or shine.<br>
+                                    Get real-time weather updates from anywhere on Earth.<br>
+                                    Just type your city and let’s begin!
+                    </h2>
+                    <p class="hide">
+                                    We're fetching the latest weather update for your city.<br>
+                                    Sometimes, the skies are harder to read than usual, or the signal takes a little longer to reach us.<br>
+                                    While we wait, take a deep breath and enjoy the moment.<br>
+                                    You’ll soon have a clear picture of what’s happening outside — be it sun, rain, snow, or something in between.<br>
+                                    Stay tuned — nature is just getting ready to speak.
+                    </p>
+                </div>
+
+                </div>
+                <div class="temp">
+                <h2 id="temp"></h2>
+                <h4 id="feel"></h4>
+                <h3 id="loc"></h3>
+                <p id="visibility"></p>
+                </div>
+            </article>
+            
+                <!-- <article class="art2">
+
+                    <div class="div_right_up">
+
+                        <div class="right_left">
+                            <div class="r1">
+                                <i class="fa-solid fa-wind"></i>
+                            </div>
+
+                            <div class="r2">
+                                <h3>Wind</h3>
+                                <p>Direction: </p>
+                                <p>Speed</p>
+                                <p>gust</p>
+                            </div>
+                        </div>
+                        
+                        <div class="right_right">
+                            <div class="r3">
+                                <i class="fa-solid fa-tornado"></i>                    
+                            </div>
+
+                            <div class="r4">
+                                <h3>Pressure : 0000 </h3>
+                                <p>Ground Level : 0000</p>
+                                <p>Sea Level : 0000</p>
+                            </div>
+                        </div>
+
+                        <div class="right_bottom">
+                            <i class="fa-solid fa-sun"></i>
+                            <p>Sunrise : 00:00</p>
+                            <p>Sunset : 00:00</p>
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                    </div>
+
+                </article> -->
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
